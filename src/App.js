@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LoginPage from './pages/login/loginPage'; // Fixed the path case
+import MainDashBoard from './pages/MainDashBoard/MainDashBoard';
+import RegistrationForm from './pages/RegistrationForm/RegistrationForm';
+import AboutUs from './pages/aboutus/AboutUs';
+import Navbar from './pages/Navbar/Nav';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      
+      <Routes>
+        {/* Define all routes here */}
+        <Route path="/" element={<LoginPage />} /> {/* Default Login Page route */}
+        <Route path="/dashboard" element={<MainDashBoard />} /> {/* Main Dashboard route */}
+        <Route path="/registration" element={<RegistrationForm />} /> {/* Registration Form route */}
+        <Route path="/about-us" element={<AboutUs />} /> {/* About Us route */}
+        
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,0 +1,97 @@
+Navbar Styles
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #318ae4;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav ul li {
+  position: relative;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.nav ul li a.active {
+  background-color: #6c757d;
+  color: white;
+}
+
+.sign-up-btn {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.sign-up-btn:hover {
+  background-color: #0056b3;
+}
+
+.movies-container {
+  display: flex;
+  justify-content: flex-start; /* Align items horizontally */
+  gap: 20px; /* Space between movies */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 20px;
+}
+
+.movies-container::-webkit-scrollbar {
+  height: 8px; /* Scrollbar height */
+}
+
+.movies-container::-webkit-scrollbar-thumb {
+  background: #007bff; /* Scrollbar color */
+  border-radius: 5px; /* Rounded scrollbar */
+}
+
+.movies-container::-webkit-scrollbar-track {
+  background: #ddd; /* Scrollbar track color */
+}
+
+.movie {
+  flex-shrink: 0; /* Prevent items from shrinking */
+  width: 200px; /* Fixed width for each movie card */
+  text-align: center;
+}
+
+.now-showing h2 {
+  font-size: 36px; /* Increase font size */
+  font-weight: bold; /* Make it bold */
+  color: #007bff; /* Add a vibrant color (blue) */
+  text-transform: uppercase; /* Make letters uppercase */
+  letter-spacing: 2px; /* Add spacing between letters */
+  margin-bottom: 30px; /* Increase spacing below the title */
+  text-align: center; /* Center-align the title */
+  background: linear-gradient(90deg, #ff8c00, #ffa500, #ff4500); /* Add gradient background */
+  -webkit-background-clip: text; /* Clip the gradient to the text */
+  -webkit-text-fill-color: transparent; /* Make the background color visible through text */
+}
+
