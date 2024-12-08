@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Nav.css'; // Ensure this file is created and styled appropriately
+import './Nav.css';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -27,7 +27,7 @@ const Navbar = () => {
         </button>
         <nav className={isMobile ? 'nav-links-mobile' : 'nav-links'}>
           <Link
-            to="/Home"
+            to="/"
             className={activeLink === 'Home' ? 'active-link' : ''}
             onClick={() => handleNavClick('Home')}
           >
@@ -55,11 +55,11 @@ const Navbar = () => {
             Contact
           </Link>
           <Link
-            to="/loging"
-            className={activeLink === 'loging' ? 'active-link' : ''}
-            onClick={() => handleNavClick('loging')}
+            to="/LoginPage"
+            className={activeLink === 'Login' ? 'active-link' : ''}
+            onClick={() => handleNavClick('Login')}
           >
-            loging
+            Login
           </Link>
         </nav>
       </div>
