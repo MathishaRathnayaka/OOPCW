@@ -7,6 +7,7 @@ import AboutUs from './pages/aboutus/AboutUs';
 
 import TicketDetails from './pages/TicketDetails/TicketDetails';
 import Navbar from './pages/Navbar/Nav';
+import Contact from './pages/contact/contact';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/registration" element={<RegistrationForm />} /> {/* Registration Form */}
         <Route path="/about" element={<AboutUs />} /> {/* About Us */}
         <Route path="/ticketdetails/:movieId" element={<TicketDetails />} /> {/* Ticket Details */}
+        <Route path='/contact' element={<Contact/>} /> 
       </Routes>
     </Router>
    </main>

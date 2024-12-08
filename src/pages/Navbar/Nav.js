@@ -3,11 +3,12 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
-]
+  { name: 'Home', href: '/', current: true }, // Redirects to Main Dashboard
+  { name: 'Contact Us', href: '/contact', current: false }, // Redirects to Contact Us page
+  { name: 'About Us', href: '/about', current: false }, // Redirects to About Us page
+  { name: 'Login', href: '/LoginPage', current: false }, // Redirects to Login Page
+];
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
