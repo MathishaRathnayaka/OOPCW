@@ -4,12 +4,14 @@ import LoginPage from './pages/login/loginPage';
 import MainDashBoard from './pages/MainDashBoard/MainDashBoard';
 import RegistrationForm from './pages/RegistrationForm/RegistrationForm';
 import AboutUs from './pages/aboutus/AboutUs';
-import TicketDetails from './pages/TicketDetails/TicketDetails'; // Import TicketDetails page
+
+import TicketDetails from './pages/TicketDetails/TicketDetails';
 import Navbar from './pages/Navbar/Nav';
 
 function App() {
   return (
-    <Router>
+   <main className='w-screen h-screen'>
+     <Router>
       {/* Include the Navbar on all pages */}
       <Navbar />
       <Routes>
@@ -20,6 +22,7 @@ function App() {
         <Route path="/ticketdetails/:movieId" element={<TicketDetails />} /> {/* Ticket Details */}
       </Routes>
     </Router>
+   </main>
   );
 }
 
